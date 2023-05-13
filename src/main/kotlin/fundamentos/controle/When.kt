@@ -4,7 +4,7 @@ import java.util.*
 
 fun main() {
   val sc = Scanner(System.`in`).useLocale(Locale.US)
-  var nota: Int
+  val nota: Int
   try {
       println("Digite uma nota de 0 a 10: ")
       nota = sc.nextInt()

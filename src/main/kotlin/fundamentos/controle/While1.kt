@@ -4,7 +4,7 @@ fun main() {
   var opcao = 0
 
   while (opcao != -1) {
-    val line = readLine() ?: "0"
+    val line = readlnOrNull() ?: "0"
     opcao = line.toIntOrNull() ?: 0
     println("Você escolheu a opção $opcao")
   }
