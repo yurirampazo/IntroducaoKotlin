@@ -41,7 +41,7 @@ fun main() {
 //  println("Resultado 2: ${resultado2}")
 
   //Definindo a função em uma linha
-  val subtracao = { a: Int, b: Int -> a -b }
+  val subtracao = { a: Int, b: Int -> a - b }
   // Passando a função definida como parâmetro
   val resultado3 = calculadora.calcular(3, 4, subtracao)
   println("Resultado 3: ${resultado3}")
