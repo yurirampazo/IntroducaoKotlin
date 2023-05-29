@@ -11,10 +11,10 @@ fun main() {
     Aluno("João", 5.0)
   )
 
-//  val alunosAprovados = alunos.filter { it -> it.nota >= 7.0 }
+//  val alunosAprovados = alunos.filter { it -> it.nota >= 7.0 } ;;
   val alunosAprovados = alunos.filter { it.nota >= 7.0 }.sortedBy { it.nome }
   val alunosAprovadosNotaAsc = alunos.filter { it.nota >= 7.0 }.sortedBy { it.nota }
-  val alunosAprovadosNotaDesc = alunos.filter { it.nota >= 7.0 }.sortedBy { -it.nota }
+  val alunosAprovadosNotaDesc = alunos.filter { it.nota >= 7.0 }.sortedBy { -it.nota } // -it é desc
   val alunosReprovados = alunos.filterNot { alunosAprovados.contains(it) }.sortedBy { -it.nota }
 
   print("Alunos: ")
