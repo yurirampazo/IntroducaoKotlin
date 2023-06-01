@@ -29,7 +29,7 @@ fun main() {
   println(g1.toString())
 
   /**
-   * Funcionalidades já existentes no data class: euqlas(), hashCode(), copy()
+   * Funcionalidades já existentes no data class: equals(), hashCode(), copy()
    * */
   val tv1 = TV("Samsung", 32)
   val tv2 = TV("Samsung", 32)
