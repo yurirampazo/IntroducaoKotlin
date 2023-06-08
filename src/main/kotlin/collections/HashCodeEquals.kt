@@ -1,9 +1,12 @@
 package collections
 
 class Objeto(val nome: String, val descricao: String) {
-  override fun hashCode(): Int {
-    return nome.length
-  }
+//  override fun hashCode(): Int {
+//    return nome.length
+//  }
+
+  override fun hashCode() = nome.length
+
 
   override fun equals(other: Any?) = if (other is Objeto) {
     nome.equals(other.nome, ignoreCase = true)
